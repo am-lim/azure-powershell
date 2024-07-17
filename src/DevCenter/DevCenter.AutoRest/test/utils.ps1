@@ -46,7 +46,7 @@ function setupEnv() {
     $env.Tenant = (Get-AzContext).Tenant.Id
 
 
-    $resourceGroup = "pwshRg" + (RandomString -allChars $false -len 6)
+    $resourceGroup = "pwshRgd8cl6x"
     $managedIdentityName = "pwshMsi" + (RandomString -allChars $false -len 6)
     $devCenterName = "pwshDc" + (RandomString -allChars $false -len 6)
     $devCenterNameDelete = "pwshDc2" + (RandomString -allChars $false -len 6)
@@ -54,7 +54,7 @@ function setupEnv() {
     $projectNameDelete = "pwshPro2" + (RandomString -allChars $false -len 6)
     $poolName = RandomString -allChars $false -len 6
     $poolNameDelete = RandomString -allChars $false -len 6
-    $location = "canadacentral"
+    $location = "centraluseuap"
     $catalogName = RandomString -allChars $false -len 6
     $catalogNameDelete = RandomString -allChars $false -len 6
     $attachedNetworkName = RandomString -allChars $false -len 6
@@ -68,9 +68,9 @@ function setupEnv() {
     $gitHubPath = "/Environments"
     $devBoxDefinitionName = RandomString -allChars $false -len 6
     $devBoxDefinitionNameDelete = RandomString -allChars $false -len 6
-    $osStorageType = "ssd_1024gb"
-    $skuName = "general_a_8c32gb_v1"
-    $imageName = "MicrosoftWindowsDesktop_windows-ent-cpc_win11-22h2-ent-cpc-os"
+    $osStorageType = "ssd_512gb"
+    $skuName = "general_i_8c32gb512ssd_v2"
+    $imageName = "microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2"
     $imageReferenceId = "/subscriptions/" + $env.SubscriptionId + "/resourceGroups/" + $resourceGroup + "/providers/Microsoft.DevCenter/devcenters/" + $devCenterName + "/galleries/Default/images/" + $imageName
     $imageVersion = "1.0.0"
     $environmentTypeName = RandomString -allChars $false -len 6
@@ -78,8 +78,8 @@ function setupEnv() {
     $devCenterId = "/subscriptions/" + $env.SubscriptionId + "/resourceGroups/" + $resourceGroup + "/providers/Microsoft.DevCenter/devcenters/" + $devCenterName
     $time = "18:30"
     $timeZone = "America/Los_Angeles"
-    $subnetId = "/subscriptions/f141e9f2-4778-45a4-9aa0-8b31e6469454/resourceGroups/amlim-test/providers/Microsoft.Network/virtualNetworks/amlim-vnet-canadacentral/subnets/default"
-    $sigId = "/subscriptions/" + $env.SubscriptionId + "/resourceGroups/amlim-test/providers/Microsoft.Compute/galleries/amlim_pwsh_sig"
+    $subnetId = "/subscriptions/306bbddd-068b-4efc-a779-50342af2547a/resourceGroups/pwshRgd8cl6x/providers/Microsoft.Network/virtualNetworks/pwsh-test-vnet/subnets/default"
+    $sigId = "/subscriptions/306bbddd-068b-4efc-a779-50342af2547a/resourceGroups/pwshRgd8cl6x/providers/Microsoft.Compute/galleries/pwshComputegallery"
     $sigName2 = RandomString -allChars $false -len 6
     $sigName3 = RandomString -allChars $false -len 6
     $sigName4 = RandomString -allChars $false -len 6
@@ -147,15 +147,15 @@ function setupEnv() {
     $env.Add("scheduleUpdate", $scheduleUpdate)
 
     # Replace with real values when running test recordings
-    $gitHubSecretIdentifier = "https://dummyVault/dummy/00000000"
-    $keyVaultName = "dummy"
-    $gitHubUri = "https://github.com/fake/fake.git"
-    $gitHubSecretIdentifier2 = "https://dummyVault/dummy/00000000"
+    $gitHubSecretIdentifier = "https://pwsh-kv.vault.azure.net/secrets/pwshCatalogSecret/5744a8cc710a47f2b3e43e62af8e7067"
+    $keyVaultName = "pwsh-kv"
+    $gitHubUri = "https://github.com/am-lim/deployment-environments.git"
+    $gitHubSecretIdentifier2 = "https://pwsh-kv.vault.azure.net/secrets/pwshCatalogSecret/5744a8cc710a47f2b3e43e62af8e7067"
 
     $env.Add("gitHubSecretIdentifier2", $gitHubSecretIdentifier2)
 
     Connect-AzAccount -Tenant $env.Tenant -AccountId amlim@microsoft.com
-    New-AzResourceGroup -Name $resourceGroup -Location "canadacentral"
+    #New-AzResourceGroup -Name $resourceGroup -Location "canadacentral"
 
     $attachedNetworkNew = RandomString -allChars $false -len 4
     $attachedNetworkNew2 = RandomString -allChars $false -len 5
@@ -376,6 +376,6 @@ function setupEnv() {
 }
 function cleanupEnv() {
     # Clean resources you create for testing
-    Remove-AzResourceGroup -Name $env.resourceGroup
+    #Remove-AzResourceGroup -Name $env.resourceGroup
 }
 

@@ -3,217 +3,217 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "managedIdentityName": {
-      "value": "pwshMsilo1utm"
+      "value": "pwshMsirp2jtx"
     },
     "subscriptionId": {
-      "value": "f141e9f2-4778-45a4-9aa0-8b31e6469454"
+      "value": "306bbddd-068b-4efc-a779-50342af2547a"
     },
     "resourceGroup": {
-      "value": "pwshRggm9tz2"
+      "value": "pwshRgd8cl6x"
     },
     "devCenterName": {
-      "value": "pwshDchw2yeu"
+      "value": "pwshDc5o2swb"
     },
     "devCenterNameDelete": {
-      "value": "pwshDc2kgj0lq"
+      "value": "pwshDc2erdu05"
     },
     "projectName": {
-      "value": "pwshProj3stxlh"
+      "value": "pwshProjc30awj"
     },
     "location": {
-      "value": "canadacentral"
+      "value": "centraluseuap"
     },
     "keyVaultSecret": {
-      "value": "https://dummyVault/dummy/00000000"
+      "value": "https://pwsh-kv.vault.azure.net/secrets/pwshCatalogSecret/5744a8cc710a47f2b3e43e62af8e7067"
     },
     "subnetId": {
-      "value": "/subscriptions/f141e9f2-4778-45a4-9aa0-8b31e6469454/resourceGroups/amlim-test/providers/Microsoft.Network/virtualNetworks/amlim-vnet-canadacentral/subnets/default"
+      "value": "/subscriptions/306bbddd-068b-4efc-a779-50342af2547a/resourceGroups/pwshRgd8cl6x/providers/Microsoft.Network/virtualNetworks/pwsh-test-vnet/subnets/default"
     },
     "networkConnectionName": {
-      "value": "7xsgmy"
+      "value": "m9h6lk"
     },
     "networkConnectionNameDelete": {
-      "value": "h0ukoj"
+      "value": "hux0li"
     },
     "catalogName": {
-      "value": "i29785"
+      "value": "8tdnfy"
     },
     "gitHubRepo": {
-      "value": "https://github.com/fake/fake.git"
+      "value": "https://github.com/am-lim/deployment-environments.git"
     },
     "attachedNetworkName": {
-      "value": "6naz5c"
+      "value": "075zoq"
     },
     "devBoxDefinitionName": {
-      "value": "h3dpk9"
+      "value": "7dztfa"
     },
     "imageReferenceId": {
-      "value": "/subscriptions/f141e9f2-4778-45a4-9aa0-8b31e6469454/resourceGroups/pwshRggm9tz2/providers/Microsoft.DevCenter/devcenters/pwshDchw2yeu/galleries/Default/images/MicrosoftWindowsDesktop_windows-ent-cpc_win11-22h2-ent-cpc-os"
+      "value": "/subscriptions/306bbddd-068b-4efc-a779-50342af2547a/resourceGroups/pwshRgd8cl6x/providers/Microsoft.DevCenter/devcenters/pwshDc5o2swb/galleries/Default/images/microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2"
     },
     "skuName": {
-      "value": "general_a_8c32gb_v1"
+      "value": "general_i_8c32gb512ssd_v2"
     },
     "osStorageType": {
-      "value": "ssd_1024gb"
+      "value": "ssd_512gb"
     },
     "keyVaultName": {
-      "value": "dummy"
+      "value": "pwsh-kv"
     },
     "environmentTypeName": {
-      "value": "dwejvk"
+      "value": "o0ix4r"
     },
     "poolName": {
-      "value": "vpa70o"
+      "value": "kcoqvw"
     },
     "galleryName": {
-      "value": "leh6m0"
+      "value": "jblxt7"
     },
     "sigId": {
-      "value": "/subscriptions/f141e9f2-4778-45a4-9aa0-8b31e6469454/resourceGroups/amlim-test/providers/Microsoft.Compute/galleries/amlim_pwsh_sig"
+      "value": "/subscriptions/306bbddd-068b-4efc-a779-50342af2547a/resourceGroups/pwshRgd8cl6x/providers/Microsoft.Compute/galleries/pwshComputegallery"
     },
     "sigName2": {
-      "value": "7un96r"
+      "value": "mgh15c"
     },
     "sigName3": {
-      "value": "uvhm7y"
+      "value": "1dhyju"
     },
     "sigName4": {
-      "value": "u48phj"
+      "value": "rl2hod"
     },
     "sigName5": {
-      "value": "8pvrkx"
+      "value": "0lc41h"
     },
     "projectNameDelete": {
-      "value": "pwshPro2og402n"
+      "value": "pwshPro2sol9e6"
     },
     "catalogNameDelete": {
-      "value": "2t5u7q"
+      "value": "n35pha"
     },
     "attachedNetworkNameDelete": {
-      "value": "92nl3z"
+      "value": "xwgjl1"
     },
     "devBoxDefinitionNameDelete": {
-      "value": "vz9ibo"
+      "value": "u4hsx0"
     },
     "environmentTypeNameDelete": {
-      "value": "1mu390"
+      "value": "oc7yp8"
     },
     "galleryNameDelete": {
-      "value": "7omi64"
+      "value": "0fyxlz"
     },
     "poolNameDelete": {
-      "value": "fzolg0"
+      "value": "lyh95w"
     },
     "envForProjEnvTypeNew": {
-      "value": "s0my"
+      "value": "70j3"
     },
     "envForProjEnvTypeNew2": {
-      "value": "25gl"
+      "value": "yn27"
     },
     "poolForScheduleNew": {
-      "value": "60qks"
+      "value": "c349e"
     },
     "poolForScheduleNew2": {
-      "value": "c65i"
+      "value": "bcm8"
     },
     "projectNameDelete2": {
-      "value": "vepyst"
+      "value": "mnft87"
     },
     "catalogNameDelete2": {
-      "value": "4kfnut"
+      "value": "sq85gp"
     },
     "environmentTypeNameDelete2": {
-      "value": "w76xp1"
+      "value": "tmjv2h"
     },
     "projEnvironmentTypeNameDelete": {
-      "value": "t9rqhz"
+      "value": "tha6o1"
     },
     "projEnvironmentTypeNameDelete2": {
-      "value": "tj7rw5"
+      "value": "nzrlq2"
     },
     "devBoxDefinitionNameDelete2": {
-      "value": "kxgqbo"
+      "value": "eg2kw4"
     },
     "galleryNameDelete2": {
-      "value": "zfwrem"
+      "value": "t6d97n"
     },
     "poolNameDelete2": {
-      "value": "odspl1"
+      "value": "i2jls4"
     },
     "networkConnectionNameDelete2": {
-      "value": "gezmtq"
+      "value": "hfm2ow"
     },
     "attachedNetworkNameDelete2": {
-      "value": "lw0ys2"
+      "value": "6wbvrk"
     },
     "devCenterNameDelete2": {
-      "value": "zyv7hr"
+      "value": "q8oj6y"
     },
     "poolForScheduleDelete": {
-      "value": "oy09qc"
+      "value": "w4f8s9"
     },
     "poolForScheduleDelete2": {
-      "value": "5ypd7c"
+      "value": "zmry0b"
     },
     "catalogSet": {
-      "value": "6q1cyh"
+      "value": "fypr5t"
     },
     "devBoxDefinitionSet": {
-      "value": "l4a9fe"
+      "value": "vc1uyp"
     },
     "devCenterSet": {
-      "value": "bys8zj"
+      "value": "xcpyiz"
     },
     "environmentTypeSet": {
-      "value": "9mb28l"
+      "value": "o1x5ei"
     },
     "networkConnectionSet": {
-      "value": "wp3q5m"
+      "value": "h4csm8"
     },
     "poolSet": {
-      "value": "b8lfax"
+      "value": "g2yp10"
     },
     "projectSet": {
-      "value": "1yf8he"
+      "value": "yvhx3g"
     },
     "projectEnvironmentTypeSet": {
-      "value": "kqa5px"
+      "value": "uieyr3"
     },
     "scheduleSet": {
-      "value": "drbf0o"
+      "value": "g053bt"
     },
     "catalogUpdate": {
-      "value": "r4dg8z"
+      "value": "sif14t"
     },
     "devBoxDefinitionUpdate": {
-      "value": "zyp7u0"
+      "value": "fszvdw"
     },
     "devCenterUpdate": {
-      "value": "5rkqgw"
+      "value": "tg6fpq"
     },
     "environmentTypeUpdate": {
-      "value": "sf2b9c"
+      "value": "2lse13"
     },
     "networkConnectionUpdate": {
-      "value": "u617o3"
+      "value": "in813v"
     },
     "poolUpdate": {
-      "value": "b5ri3z"
+      "value": "9jwxz2"
     },
     "projectUpdate": {
-      "value": "jr05ay"
+      "value": "4cufy9"
     },
     "projectEnvironmentTypeUpdate": {
-      "value": "bucn8l"
+      "value": "ngwkzl"
     },
     "scheduleUpdate": {
-      "value": "ebsz6a"
+      "value": "3c1saz"
     },
     "networkConnectionHybridSet": {
-      "value": "16eso2"
+      "value": "1js2nv"
     },
     "networkConnectionHybridUpdate": {
-      "value": "dgp80s"
+      "value": "flrc9q"
     }
   }
 }
